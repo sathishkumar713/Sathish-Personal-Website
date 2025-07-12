@@ -5,12 +5,12 @@ export const Skills = () => {
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
 
   const skills = [
-    { name: 'JavaScript', level: 95, color: 'from-yellow-400 to-orange-500' },
-    { name: 'React', level: 90, color: 'from-blue-400 to-cyan-500' },
-    { name: 'TypeScript', level: 85, color: 'from-blue-600 to-blue-800' },
-    { name: 'Node.js', level: 80, color: 'from-green-400 to-emerald-600' },
-    { name: 'Python', level: 75, color: 'from-green-500 to-yellow-500' },
-    { name: 'AWS', level: 70, color: 'from-orange-400 to-red-500' },
+    { name: 'C/C++', level: 90, color: 'from-blue-400 to-blue-600' },
+    { name: 'Python', level: 85, color: 'from-green-400 to-blue-500' },
+    { name: 'Swift', level: 80, color: 'from-orange-400 to-red-500' },
+    { name: 'JavaScript', level: 75, color: 'from-yellow-400 to-orange-500' },
+    { name: 'Web Technologies', level: 70, color: 'from-purple-400 to-pink-500' },
+    { name: 'iOS Development', level: 85, color: 'from-gray-400 to-gray-600' },
   ];
 
   return (
@@ -18,7 +18,7 @@ export const Skills = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Skills & Expertise
+            Technical Skills
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto"></div>
         </div>
@@ -51,10 +51,34 @@ export const Skills = () => {
           ))}
         </div>
 
+        <div className="mt-16 grid md:grid-cols-2 gap-8">
+          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+            <h3 className="text-xl font-semibold text-white mb-4">Development Tools</h3>
+            <div className="flex flex-wrap gap-2">
+              {['Visual Studio Code', 'Git/GitHub', 'Xcode', 'Linux Terminal'].map((tool) => (
+                <span key={tool} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
+                  {tool}
+                </span>
+              ))}
+            </div>
+          </div>
+          
+          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+            <h3 className="text-xl font-semibold text-white mb-4">Platforms & OS</h3>
+            <div className="flex flex-wrap gap-2">
+              {['Windows 10/11', 'Linux (Ubuntu)', 'macOS', 'iOS'].map((platform) => (
+                <span key={platform} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
+                  {platform}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+
         <div className="mt-16 text-center">
           <p className="text-gray-400 max-w-2xl mx-auto">
-            These percentages represent my comfort level and experience with each technology. 
-            I'm always learning and pushing these numbers higher! 📈
+            Continuously learning and expanding my skill set through competitive programming, 
+            hackathons, and hands-on projects. Always excited to take on new challenges! 🚀
           </p>
         </div>
       </div>

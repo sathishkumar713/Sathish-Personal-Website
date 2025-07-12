@@ -4,7 +4,7 @@ import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
 
 export const Hero = () => {
   const [displayText, setDisplayText] = useState("");
-  const fullText = "I'm a Creative Developer";
+  const fullText = "I'm a Computer Science Engineering Student";
   
   useEffect(() => {
     let currentIndex = 0;
@@ -39,12 +39,12 @@ export const Hero = () => {
       <div className="text-center z-10 px-4">
         <div className="mb-8">
           <div className="w-32 h-32 mx-auto mb-8 bg-gradient-to-br from-blue-400 via-purple-500 to-cyan-400 rounded-full flex items-center justify-center text-4xl font-bold text-white shadow-2xl animate-scale-in">
-            JS
+            SK
           </div>
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
-          John Smith
+          Sathish Kumar
         </h1>
         
         <div className="text-2xl md:text-3xl text-gray-300 mb-8 h-12 flex items-center justify-center animate-fade-in delay-500">
@@ -53,8 +53,8 @@ export const Hero = () => {
         </div>
         
         <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-12 animate-fade-in delay-1000">
-          Crafting digital experiences that blend creativity with functionality. 
-          I solve complex problems through elegant code and innovative design.
+          Motivated CSE student with expertise in mobile app development and competitive programming. 
+          Passionate about creating innovative software solutions and contributing to open source projects.
         </p>
 
         <div className="flex justify-center space-x-6 mb-16 animate-fade-in delay-1500">
@@ -75,7 +75,7 @@ export const Hero = () => {
             <Linkedin className="w-6 h-6 text-white" />
           </a>
           <a 
-            href="mailto:john@example.com"
+            href="mailto:sathishkumar87800@gmail.com"
             className="p-3 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110"
           >
             <Mail className="w-6 h-6 text-white" />

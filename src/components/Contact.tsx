@@ -1,5 +1,5 @@
 
-import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { Mail, MapPin, Phone, Send, GraduationCap, Award } from "lucide-react";
 import { useState } from "react";
 
 export const Contact = () => {
@@ -32,7 +32,8 @@ export const Contact = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto"></div>
           <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-            Ready to bring your ideas to life? Let's discuss your next project and create something amazing together.
+            I'm actively seeking internship opportunities and open to discussing innovative projects, 
+            collaboration opportunities, or just connecting with fellow developers.
           </p>
         </div>
 
@@ -42,16 +43,16 @@ export const Contact = () => {
             <div>
               <h3 className="text-2xl font-semibold text-white mb-6">Get in Touch</h3>
               <p className="text-gray-400 mb-8">
-                I'm always excited to work on new projects and meet fellow developers. 
-                Whether you have a question or just want to say hi, feel free to reach out!
+                Whether you're looking for a motivated intern, have an exciting project to discuss, 
+                or just want to connect about technology and programming, I'd love to hear from you!
               </p>
             </div>
 
             <div className="space-y-6">
               {[
-                { icon: Mail, label: "Email", value: "john@example.com", href: "mailto:john@example.com" },
-                { icon: Phone, label: "Phone", value: "+1 (555) 123-4567", href: "tel:+15551234567" },
-                { icon: MapPin, label: "Location", value: "San Francisco, CA", href: "#" }
+                { icon: Mail, label: "Email", value: "sathishkumar87800@gmail.com", href: "mailto:sathishkumar87800@gmail.com" },
+                { icon: Phone, label: "Phone", value: "+91 7330715713", href: "tel:+917330715713" },
+                { icon: MapPin, label: "Location", value: "Dhone, Kurnool, Andhra Pradesh, India", href: "#" }
               ].map((contact, index) => (
                 <a 
                   key={index}
@@ -67,6 +68,27 @@ export const Contact = () => {
                   </div>
                 </a>
               ))}
+            </div>
+
+            {/* Education & Achievements */}
+            <div className="space-y-6 mt-8">
+              <div className="p-6 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                <div className="flex items-center space-x-3 mb-4">
+                  <GraduationCap className="w-6 h-6 text-blue-400" />
+                  <h4 className="text-lg font-semibold text-white">Education</h4>
+                </div>
+                <p className="text-gray-300 text-sm">BTech in Computer Science & Engineering</p>
+                <p className="text-gray-400 text-sm">Lovely Professional University (2024-2028)</p>
+              </div>
+
+              <div className="p-6 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                <div className="flex items-center space-x-3 mb-4">
+                  <Award className="w-6 h-6 text-purple-400" />
+                  <h4 className="text-lg font-semibold text-white">Certification</h4>
+                </div>
+                <p className="text-gray-300 text-sm">Swift App Development</p>
+                <p className="text-gray-400 text-sm">GeeksforGeeks (2024)</p>
+              </div>
             </div>
           </div>
 
@@ -136,7 +158,7 @@ export const Contact = () => {
         {/* Footer */}
         <div className="text-center mt-20 pt-8 border-t border-white/10">
           <p className="text-gray-400">
-            © 2024 John Smith. Built with React and lots of ☕
+            © 2024 Sathish Kumar. Built with React and lots of dedication 🚀
           </p>
         </div>
       </div>

@@ -15,21 +15,21 @@ export const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm a passionate developer with over 5 years of experience creating 
-              digital solutions that make a difference. My journey began with curiosity 
-              about how things work, and evolved into a love for building applications 
-              that solve real-world problems.
+              I'm a passionate Computer Science Engineering student at Lovely Professional University 
+              with a strong foundation in programming languages including C, C++, Python, and Swift. 
+              My journey in technology is driven by curiosity and the desire to create solutions that 
+              make a real impact.
             </p>
             
             <p className="text-lg text-gray-300 leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, 
-              contributing to open-source projects, or sharing knowledge with the 
-              developer community. I believe in continuous learning and the power 
-              of collaboration.
+              With hands-on experience in mobile application development and competitive programming, 
+              I've solved over 100+ coding challenges and actively participate in hackathons. 
+              I'm seeking internship opportunities to apply my technical skills in collaborative, 
+              innovative software development projects.
             </p>
 
             <div className="flex flex-wrap gap-4 mt-8">
-              {['JavaScript', 'React', 'Node.js', 'Python', 'TypeScript', 'AWS'].map((tech) => (
+              {['C/C++', 'Python', 'Swift', 'JavaScript', 'iOS Development', 'Web Technologies'].map((tech) => (
                 <span 
                   key={tech}
                   className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm text-gray-300 hover:bg-white/20 transition-colors duration-200"
@@ -44,18 +44,18 @@ export const About = () => {
             {[
               {
                 icon: Code,
-                title: "Clean Code",
-                description: "Writing maintainable, scalable code that stands the test of time"
+                title: "Problem Solving",
+                description: "Strong analytical thinking with 100+ solved coding challenges across multiple platforms"
               },
               {
                 icon: Lightbulb,
-                title: "Innovation",
-                description: "Bringing creative solutions to complex technical challenges"
+                title: "Mobile Development",
+                description: "iOS app development using Swift with focus on clean architecture and user experience"
               },
               {
                 icon: Users,
-                title: "Collaboration",
-                description: "Working closely with teams to deliver exceptional results"
+                title: "Team Collaboration",
+                description: "Active participation in hackathons, coding contests, and open source contributions"
               }
             ].map((item, index) => (
               <div 
